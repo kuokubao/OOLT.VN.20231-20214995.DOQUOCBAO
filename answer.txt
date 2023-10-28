@@ -1,0 +1,23 @@
+1.When should accessor methods be used?
+Phương thức getter và setter, còn được gọi là các phương thức accessor 
+và mutator, đóng một vai trò quan trọng trong lập trình hướng đối tượng.
+Chúng không phải lúc nào cũng "độc ác", nhưng việc sử dụng chúng cần được xem xét một cách cẩn thận. 
+Accessor được sử dụng để lấy giá trị thuộc tính, trong khi mutator được sử dụng để thay đổi chúng. 
+Tuy nhiên, áp dụng chúng một cách mù quáng cho tất cả các thuộc tính có thể làm lộ ra chi tiết bên trong của một lớp và gây khó khăn cho việc thay đổi trong tương lai. 
+Rất quan trọng phải sử dụng chúng một cách cân nhắc và lựa chọn. 
+Nguyên tắc của ít quyền truy cập nhất nên hướng dẫn cho việc triển khai chúng, đảm bảo tiết lộ ít nhất các chi tiết bên trong của một lớp. 
+Trong một số trường hợp, việc tái cấu trúc mã nguồn để biểu đạt rõ ràng hơn và duy trì tính đóng gói có thể là một cách tiếp cận ưa thích hơn so với việc sử dụng quá nhiều getter và setter.
+
+2.- If you create a constructor method to build a DVD by title then create a constructor method to build
+a DVD by category. Does JAVA allow you to do this?
+Có, Java cho phép bạn tạo nhiều phương thức khởi tạo (constructor) trong một lớp thông qua một cơ chế gọi là "constructor overloading." 
+Constructor overloading cho phép bạn có nhiều hàm khởi tạo với các danh sách tham số khác nhau. Điều này cho phép bạn tạo các đối tượng với các kết hợp thuộc tính khác nhau mà không cần phải tạo một lớp riêng biệt cho từng kết hợp đó.
+
+Ví dụ, bạn có thể có một hàm khởi tạo để tạo DVD chỉ dựa trên tiêu đề (title), và một hàm khởi tạo để tạo DVD dựa trên tiêu đề và thể loại (category), 
+miễn là danh sách tham số của chúng khác nhau (ví dụ: số lượng hoặc kiểu tham số). Điều này giúp linh hoạt trong việc khởi tạo đối tượng dựa trên yêu cầu của ứng dụng của bạn.
+3.Is JAVA a Pass by Value or a Pass by Reference programming language?
+Java là một ngôn ngữ lập trình "truyền giá trị". 
+Trong Java, khi bạn truyền một đối số cho một phương thức, bạn đang truyền một bản sao của giá trị mà biến đó đang giữ, chứ không phải là tham chiếu đến biến hoặc đối tượng thực tế. 
+Bất kỳ thay đổi nào được thực hiện trên tham số trong phương thức cũng không ảnh hưởng đến biến hoặc đối tượng gốc bên ngoài phương thức. 
+Điều này khác với ngôn ngữ "truyền tham chiếu" nơi thay đổi trên tham số sẽ phản ánh vào biến gốc. 
+Java sử dụng truyền giá trị để đảm bảo tính toàn vẹn dữ liệu và tránh các tác động phụ không cần thiết trong chương trình của bạn.
