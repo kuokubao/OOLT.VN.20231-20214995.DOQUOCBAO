@@ -16,13 +16,10 @@ public class CartTest {
 		cart.addDigitalVideoDisc(dvd2);
 		
 		DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladin", "Animation", 18.99f);
-		cart.addDigitalVideoDisc(dvd3);
-		
-		//Bui Ta Duc 20215035
-		// Test the print method
-		//cart.print();
-//		cart.searchById(5);
-//		cart.searchById(3);
+		cart.addDigitalVideoDisc(dvd3);		
+		cart.print();
+		cart.searchById(5);
+		cart.searchById(3);
 		cart.searchByTitle("The Lion King");
 		cart.searchByTitle("The");
 	}

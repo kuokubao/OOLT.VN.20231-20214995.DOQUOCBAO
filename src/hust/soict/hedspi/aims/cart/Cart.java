@@ -66,7 +66,6 @@ public class Cart {
 		}
 	}
 	
-	//Bui Ta Duc 20215035
     public void addDigitalVideoDisc(DigitalVideoDisc dvd1, DigitalVideoDisc dvd2) {
     	if (qtyOrdered + 2 > MAX_NUMBERS_ORDER) { // kiểm tra xem có đủ chỗ cho 2 DVDs
             System.out.println("Cart is almost full.");
