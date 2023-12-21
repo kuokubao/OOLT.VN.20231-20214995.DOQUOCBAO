@@ -24,11 +24,6 @@ public class Aims {
 	public static void main(String[] args) {
 		store = new Store();
 		cart = new Cart();
-		
-		/**
-		 * Author: Chu Việt Anh
-		 */
-
 		Media[] sampleMedia = new Media[] {
 				new DigitalVideoDisc("Journey To The Stars", "Sci-fi", "William Parker", 120, 35.7f),
 				new DigitalVideoDisc("Whispers Of Love", "Romance", "Eva Thompson", 105, 42.5f),

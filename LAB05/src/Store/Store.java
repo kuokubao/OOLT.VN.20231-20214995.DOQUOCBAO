@@ -1,6 +1,4 @@
-/**
- * Author: Chu Việt Anh
- */
+
 package Store;
 
 import Media.Media;
